@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    overflow-x: hidden;
+    background-color:  #e7e7e5;
+}
+
+#title{
+    color: white;
+    margin-top: 12px;
+    margin-left: 15px;
+    position: absolute;
+}
+
+h2{
+    margin-bottom: -5px;
+}
+
+#finn{
+    width: 100%;
+    margin-top: -80px;
+    object-fit: cover;
+    height: 150px;
+}
+
+#fixedMenu{
+    position: fixed;
+    z-index: 5;
+    width: 100vw;
+  }
+  
+#links{
+    width: 300px;
+    height: calc(100vh);
+    position: absolute;
+    left:calc(100vw - 300px);
+    background: linear-gradient(white, rgba(231, 231, 229, 0));
+    transition: 0.4s;
+    z-index: 2;
+    display: none;
+}
+  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    width: fit-content;
+}
+    
+li a {
+    display: block;
+    color: #222323;
+    text-align: left;
+    text-decoration: none;
+    padding-left: 30px;
+    cursor: pointer;
+}
+    
+li a:hover {
+    text-decoration: underline;
+}
+  
+/* Hamburger menu from W3 schools */
+
+.container {
+    position: absolute;
+    z-index: 3;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+  
+#bar1, #bar2, #bar3 {
+    background-color:white;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+    
+.change #bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+    
+.change #bar2 {
+    opacity: 0;
+}
+    
+.change #bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+section{
+    position: absolute;
+    top: 100px;
+}
+
+article{
+    display: block;
+    overflow: auto;
+    margin-left: 200px;
+    width:1000px;
+    margin-bottom: 50px;
+}
+
+.text{
+    float: left;
+    width: 600px;
+}
+
+.media{
+    margin-top: 10px;
+    float: right;
+    width: 300px;
+}
+
+img{
+    width: 300px;
+    margin-bottom: 10px;
+}
