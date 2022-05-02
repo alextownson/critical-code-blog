@@ -27,6 +27,7 @@
               <ul>
                 <li><a href='#blog1'><h1>Blog One</h1></a></li>
                 <li><a href='#blog2'><h1>Blog Two</h1></a></li>
+                <li><a href='#progress'><h1>Progress</h1></a></li>
               </ul>
             </div>
           </div>
@@ -39,7 +40,7 @@
 
       <section>
         <article id="blog1">
-          <h2>Arduino Instrument</h2>
+          <h2>Blog One: Arduino Instrument</h2>
 
             <div class="text">
               <p>For my overarching project I intend to create an instrument with an Arduino. I currently have no electronics experience but I have created web based instruments in the past; combining my passions for music and web development. These projects, <a target="_blank" href="https://alextownson.github.io/soft-sound/">Soft Sound</a> and <a target="_blank" href="https://alextownson.github.io/black-box/">Black Box</a>, were the first things I created that I felt genuinely proud of. Black Box in particular inspired this new project as it was the first time I developed something with a physical component. It uses a phone gyroscope as a way to control audio effects. Achieving this proved to be incredibly difficult but the outcome was uniquely mine as opposed to creating my version of an instrument that already existed. This course and project seem like the perfect opportunity to further explore audio programming as it is not something that would otherwise be taught in my graphic design degree. Although I don&#39t know exactly what the final outcome will be, I think this project relates to the course because I will be improving my coding skills, as well as learning a new skill with the Arduino to build an instrument for use in my own music practice. Rather than working with a predefined tool or software, I have the autonomy to create whatever I want or need for my music.</p>
@@ -63,7 +64,7 @@
 
 
         <article id="blog2">
-          <h2>Arduino Starter Kit</h2>
+          <h2>Blog Two: Arduino Starter Kit</h2>
           <div class="text">
             <p>I must admit, I entered this project quite naive. I knew I wanted to learn some basic electronics but when I chose the Arduino, I didn&#39t even <em>really</em> know what a microcontroller was. Having completed the Arduino Starter Kit (see video to the right), I have a much better sense of what I am capable of making as a beginner with the current components I have. I personally found the kit to be incredibly helpful. As I&#39ve mentioned, I had no experience with any of this before embarking on this project. I recognize that tutorials only take learning so far but I&#39m really glad I took this route as it&#39s created a foundation of knowledge for creating future unique projects. I don&#39t think I would have known where to start otherwise.</p>
             
@@ -89,6 +90,20 @@
           <div class="media">
             <iframe scrolling='no' frameborder='0' style='width: 300px; height: 533px; margin-top: 10px; border:0;' src='https://ocadu.techsmithrelay.com/BGqx/e' allowfullscreen></iframe>
           </div>  
+        </article>
+
+        <article id="progress">
+          <h2>Progress: SEQ</h2>
+          <div class="text">
+            <p>I created a PDF for my progress submission.</p>
+            <p><a target="_blank" href="https://www.figma.com/file/ctR0bctG1SyQKzVoQKEbrG/Sequencer?node-id=0%3A1" >Figma project</a></p>
+            <p><a target="_blank" href="https://github.com/alextownson/sequencer" >GitHub repository</a></p>
+
+            <embed src="assets/ATownson_MidTermProgress.pdf" width="900px" height="768px" />
+
+            <p>On the last page you can see that I have created the Arduino controller. I decided to create physical controls for all of the constant controls in the application: play/pause, tempo, volume, download. The LCD then prints whatever you're changing within the application. I was able to get everything running with Johnny-Five no problem but what I did not consider was the fluctuation in analog signal (the pontentiometers). I tried to create a conditional statement that prevents the variable from updating and printing to the LCD if said change is smaller than x amount. This did work better than nothing but I don't think this will be good enough solution for controlling the master volume and tempo respectively. I will likely get rid of the potentiometers and keep the rest as is. Only if I have time will I create a more robust button system to control these aspects of the sequencer.</p>
+          </div>
+
         </article>
 
       </section>
