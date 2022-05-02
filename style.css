@@ -15,8 +15,12 @@ body{
 }
 
 h2{
-    padding-top: 75px;
     margin-bottom: -5px;
+    font-size: 22pt;
+}
+
+p{
+    font-size: 14pt;
 }
 
 #finn{
@@ -25,6 +29,33 @@ h2{
     object-fit: cover;
     height: 150px;
 }
+
+section{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding-bottom: 100px;
+}
+
+article{
+    padding-top: 80px;
+    margin-bottom: -40px;
+    width: 800px;
+}
+
+img{
+    width: 800px;
+}
+
+.media{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+
+
+/* MENU */
 
 #fixedMenu{
     position: fixed;
@@ -62,8 +93,6 @@ li a {
 li a:hover {
     text-decoration: underline;
 }
-  
-/* Hamburger menu from W3 schools */
 
 .container {
     position: absolute;
@@ -95,31 +124,3 @@ li a:hover {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-section{
-    position: absolute;
-    top: 25px;
-    padding-bottom: 100px;
-}
-
-article{
-    display: block;
-    overflow: auto;
-    margin-left: 200px;
-    width:1000px;
-}
-
-.text{
-    float: left;
-    width: 600px;
-}
-
-.media{
-    margin-top: 10px;
-    float: right;
-    width: 300px;
-}
-
-img{
-    width: 300px;
-    margin-bottom: 10px;
-}
