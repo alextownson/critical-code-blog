@@ -30,6 +30,7 @@
                 <li><a href='#progress'><h1>Progress</h1></a></li>
                 <li><a href='#blog3'><h1>Blog Three</h1></a></li>
                 <li><a href='#blog4'><h1>Blog Four</h1></a></li>
+                <li><a href='#FinalProject'><h1>Final Project</h1></a></li>
               </ul>
             </div>
           </div>
@@ -128,7 +129,6 @@
 
         <article id="blog4">
           <h2>Blog Four: The Little Bug That <em>Almost</em> Could</h2>
-          <div class="text">
             <p>I was feeling incredibly confident after setting up my toolchain and testing all of the different components (my Arduino controller, Tone.js, and React) successfully. I did a pretty complicated thing, and I understood what I was doing. Or at least I thought I did.</p>
 
             <p>I decided to start coding the bulk of my project by making the interface of my application first. It seemed like the easiest part of my build and since I had already designed the whole thing to the pixel, I didn't think it would take me that long. Then came The Bug. Quite literally the first thing I tried to do in my code was import my image assets. I then spent 2 full days trying to figure out why it wasn't working. I also submitted the bug as my <a target="_blank" href="https://github.com/alextownson/sequencer/issues/1">code review</a> but I can do a better job explaining it now, post bug.</p> 
@@ -171,11 +171,39 @@
             <p><em>What I Learned</em></p>
 
             <p>I was so certain that this work was above my skill level that I didn't even check for such a small error. It was both amazing and devastating to realize that a typo was the only thing broken in my code. Surprisingly this is the first time something like this has happened to me. Any other time I've had such a persistent bug it really was because I didn't know what I was doing. This was a big lesson because now I will absolutely check for typos first. This bug took so much of my time. With that being said, the time I spent really trying to understand how every aspect of what I was doing worked was not really wasted. I have a much better understanding of what I've done which will be incredibly helpful for the next React application I build. I also decided to keep my workaround, in part to save time but also because it may actually make more sense than what I was trying to do in the first place.</p>
-
-          </div>
         </article>
        
-       
+       <article id="FinalProject">
+         <h2>Final Project</h2>
+
+         <p><a target="_blank" href="https://github.com/alextownson/sequencer">Code repository</a>, <a target="_blank" href="https://alextownson.github.io/sequencer/dist/index.html">work in progress site</a>.</p>
+
+         <p>SEQ is still a work in progress but here's everything I've done!</p>
+
+         <video width="800" controls>
+          <source src="assets/av.mp4" />
+         </video>
+
+         <p>The controller is intended to be used for play/pause, volume control, tempo, and downloading the audio file. You can see the issue I talked about in my progress report in the first video: Since the potentiometer values are not stable, they print to the LCD when they shouldn't. In the second video I've commented out the code for them so that you can see how it should behave.</p>
+
+         <p><a target="_blank" href="https://github.com/alextownson/sequencer/blob/main/src/components/Controller.js">Code with comments</a>.</p>
+
+         <p>Aside from learning some new syntax to use Johnny-Five, coding this felt too easy. All I'm really doing is storing inputs and outputs into variables to control other things. I found wiring the Arduino board more complicated and time consuming than coding this. I felt as though I needed to add more complexity to my project to make up for it. My one regret is that I should have spent more time learning how to connect said inputs and outputs to other things rather than just moving on to the next aspect of the project. I just assumed I would be able to export from this file with ease. That ended up not being the case.</p>
+
+         <img src="assets/seqInterface2.png" alt="Seq interface">
+
+         <p><a target="_blank" href="https://github.com/alextownson/sequencer/blob/main/src/components/Interface.jsx">Code with comments</a>.</p>
+
+         <p>I made some of the interface in React but the learning curve for using dependencies is so steep that I spent most of my time learning how to implement it rather than learning how to use it. I did start a course on React but I did not finish it by the time I needed to start coding. I learned enough JSX to write a couple of function components. I could then render those components in HTML. I am currently trying to figure out how to handle state changes for inputs so that I can connect the volume and tempo controls to Tone.</p>
+
+         <p><a target="_blank" href="https://github.com/alextownson/sequencer/blob/main/src/components/Sequencer.js">Code with comments</a>.</p>
+
+         <p><a href="https://tonejs.github.io/examples/stepSequencer">This</a> is what I was hoping to make in Tone. As you'll see in the Github pages deployment, I'm not quite there yet. I know what I need to do but I just couldn't quite grasp how to do it in JavaScript. The buttons for example; I could figure out which row had been clicked but I didn't know how to access the grandchildren(?) of an HTMLcollection. I was starting to get into some logic problems that were way over my head. What I did do was connect the play/pause button to a loop. That loop would then in theory be populated by the selections on the sequencer. For now, the button rows connect to the key that they will output to the loop.</p> 
+
+        <p><em>What I Learned</em></p>
+
+        <p>Although I wish I had more "completed" for this submission, I am so proud of how much I've learned in the process so far. Starting this project, albeit maybe a little too late in the semester, brought me back to my motivated and inspired self. I spent a couple of weeks making incredibly fun projects on an Arduino, I completed 9 courses on Codecademy, and I started coding every day. I might not have everything working yet but I know that I can and will soon.</p>
+       </article>
 
       </section>
 
